@@ -1,165 +1,168 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>数据响应式Demo</title>
-        <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </head>
-    <body>
-        <input type="text" />
-        <ul>
-            <li><code class="li"></code></li>
-        </ul>
 
-        <script>
-            function defineReactive(data, key, val) {
-                // 递归
-                if (typeof val === 'object') {
-                    new Observer(val);
-                }
-                let dep = new Dep();
-                Object.defineProperty(data, key, {
-                    enumerable: true,
-                    configurable: true,
-                    get() {
-                        // 收集依赖(watcher)
-                        dep.addSub();
-                        return val;
-                    },
-                    set(newVal) {
-                        // 通知依赖更新
-                        if (val == newVal) {
-                            return null;
-                        }
-                        val = newVal;
-                        dep.notify();
-                    },
-                });
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>数据响应式Demo</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <input type="text" />
+    <ul>
+        <li><code class="li"></code></li>
+    </ul>
+
+    <script>
+        function defineReactive(data, key, val) {
+            // 递归
+            if (typeof val === 'object') {
+                new Observer(val);
             }
 
-            // 观察者类 ==> 观察每个响应式数据
-            class Observer {
-                constructor(value) {
-                    this.value = value;
+            let dep = new Dep();
 
-                    if (!Array.isArray(value)) {
-                        this.walk(value);
-                    }
-                }
-                walk(obj) {
-                    const keys = Object.keys(obj);
-                    for (const key of keys) {
-                        defineReactive(obj, key, obj[key]);
-                    }
-                }
-            }
-
-            // 订阅者类 ==> 通知每一个Watcher(依赖)状态更新
-            class Dep {
-                constructor() {
-                    this.subs = [];
-                    let target = null;
-                }
-                addSub() {
-                    // 检测是否有依赖并且避免重复添加依赖
-                    if (Dep.target && !this.subs.includes(Dep.target)) {
-                        this.subs.push(Dep.target);
-                    }
-                }
-                removeSub(sub) {
-                    if (this.subs.length) {
-                        const index = this.subs.indexOf(sub);
-                        if (index > -1) {
-                            return this.subs.splice(index, 1);
-                        }
-                    }
-                }
-                notify() {
-                    this.subs.forEach(sub => {
-                        sub.update();
-                    });
-                }
-            }
-
-            // 被观察者类
-            class Watcher {
-                constructor(vm, path, cb) {
-                    this.vm = vm; // 被观察的对象
-                    this.getter = parsePath(path); // 通过路径获取被观察的对象
-                    this.cb = cb; // watcher更新调用的回调
-                    this.value = this.get(); // 获取初始值
-                }
+            Object.defineProperty(data, key, {
+                enumerable: true,
+                configurable: true,
                 get() {
-                    Dep.target = this;
-                    let value = this.getter.call(this.vm, this.vm);
-                    Dep.target = undefined;
-                    return value;
-                }
-                update() {
-                    const oldValue = this.value;
-                    this.value = this.get();
-                    this.cb.call(this.vm, this.value, oldValue);
-                }
-            }
-
-            function parsePath(path) {
-                const bailRE = /[^\w.$]/;
-                if (bailRE.test(path)) {
-                    return null;
-                }
-                const segments = path.split('.');
-                return function (obj) {
-                    for (let i = 0; i < segments.length; i++) {
-                        if (!obj) return;
-                        obj = obj[segments[i]];
+                    // 收集依赖(watcher)
+                    dep.depend();
+                    return val;
+                },
+                set(newVal) {
+                    // 通知依赖更新
+                    if (val === newVal) {
+                        return null;
                     }
-                    return obj;
-                };
-            }
-
-            class Vue {
-                constructor(options) {
-                    this._data = options.data;
-                    // 使data里的属性【响应式化】(递归实现)
-                    new Observer(this._data);
-                    // 给每个属性注册Watcher实例
-                    for (const key in this._data) {
-                        new Watcher(this._data, key, (newValue, oldValue) => {
-                            console.log('响应式的更新数据：');
-                            console.log(this._data);
-                            let newElement;
-                            // 暴力筛选更新的属性
-                            for (const key in this._data) {
-                                if (this._data[key] === newValue) {
-                                    newElement = key;
-                                }
-                            }
-                            // 渲染DOM
-                            li.innerHTML = this._data[`${newElement}`];
-                        });
-                    }
-                }
-            }
-
-            // 魔法字符串
-            const propName = 'test1';
-
-            let o = new Vue({
-                data: {
-                    [`${propName}`]: 'hello world',
+                    val = newVal;
+                    dep.notify();
                 },
             });
+        }
 
-            const input = document.querySelector('input');
-            const li = document.querySelector('li');
-            input.value = o._data[`${propName}`];
-            li.innerHTML = o._data[`${propName}`];
+        // 观察者类 ==> 观察每个响应式数据,即使用响应式数据的表达式，计算，函数。包装了一下 defineReactive 方法
+        class Observer {
+            constructor(value) {
+                this.value = value;
 
-            input.addEventListener('input', event => {
-                o._data[`${propName}`] = event.target.value;
-            });
-        </script>
-    </body>
+                if (!Array.isArray(value)) {
+                    this.walk(value);
+                }
+            }
+            walk(obj) {
+                const keys = Object.keys(obj);
+                for (const key of keys) {
+                    defineReactive(obj, key, obj[key]);
+                }
+            }
+        }
+
+        // 发布者类 ==> 通知每一个Watcher(依赖)状态更新
+        class Dep {
+            constructor() {
+                this.subs = [];
+                let target = null; // 标注要收集的依赖
+            }
+            depend() {
+                // 检测是否有依赖并且避免重复添加依赖
+                if (Dep.target && !this.subs.includes(Dep.target)) {
+                    this.subs.push(Dep.target);
+                }
+            }
+            removeSub(sub) {
+                if (this.subs.length) {
+                    const index = this.subs.indexOf(sub);
+                    if (index > -1) {
+                        return this.subs.splice(index, 1);
+                    }
+                }
+            }
+            notify() {
+                this.subs.forEach(sub => {
+                    sub.update();
+                });
+            }
+        }
+
+        // 订阅者类
+        class Watcher {
+            constructor(vm, path, cb) {
+                this.vm = vm; // 被观察的对象
+                this.getter = parsePath(path); // 通过路径获取被观察的对象
+                this.cb = cb; // watcher更新调用的回调
+                this.value = this.get(); // 获取初始值
+            }
+            get() {
+                Dep.target = this; // 标注要收集的依赖
+                let value = this.getter.call(this.vm, this.vm); // 取值操作，添加依赖
+                Dep.target = undefined; // 重置标注
+                return value;
+            }
+            update() {
+                const oldValue = this.value;  // 保存旧值
+                this.value = this.get(); // 获取新值
+                this.cb.call(this.vm, this.value, oldValue); // 调用回调，更新DOM
+            }
+        }
+
+        function parsePath(path) {
+            const bailRE = /[^\w.$]/;
+            if (bailRE.test(path)) {
+                return null;
+            }
+            const segments = path.split('.');
+            return function (obj) {
+                for (let i = 0; i < segments.length; i++) {
+                    if (!obj) return;
+                    obj = obj[segments[i]];
+                }
+                return obj;
+            };
+        }
+
+        class Vue {
+            constructor(options) {
+                this._data = options.data;
+                // 使data里的属性【响应式化】
+                new Observer(this._data);
+                // 给每个属性注册Watcher实例
+                Object.keys(this._data).forEach(key => {
+                    new Watcher(this._data, key, (newValue, oldValue) => {
+                        console.log('响应式的更新数据：', this._data);
+                        let newElement;
+                        // 暴力筛选更新的属性
+                        for (const key in this._data) {
+                            if (this._data[key] === newValue) {
+                                newElement = key;
+                            }
+                        }
+                        // 渲染DOM
+                        li.innerHTML = this._data[newElement];
+                    });
+                })
+            }
+        }
+
+        const propName = 'test1';
+
+        let o = new Vue({
+            data: {
+                [propName]: 'hello world',
+            },
+        });
+
+        const input = document.querySelector('input');
+        const li = document.querySelector('li');
+        input.value = o._data[propName];
+        li.innerHTML = o._data[propName];
+
+        input.addEventListener('input', event => {
+            o._data[propName] = event.target.value;
+        });
+    </script>
+</body>
+
 </html>
