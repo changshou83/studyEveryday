@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <h1>依照 <a href="https://book.douban.com/subject/32581281/">《深入浅出Vue》</a> 实现的Vue2的响应系统Demo</h1>
     <input type="text" />
     <ul>
         <li><code class="li"></code></li>
@@ -146,18 +147,17 @@
             }
         }
 
+        // 测试
         const propName = 'test1';
-
-        let o = new Vue({
+        let instance = new Vue({
             data: {
                 [propName]: 'hello world',
             },
         });
-
         const input = document.querySelector('input');
         const li = document.querySelector('li');
-        input.value = o._data[propName];
-        li.innerHTML = o._data[propName];
+        input.value = instance._data[propName];
+        li.innerHTML = instance._data[propName];
 
         input.addEventListener('input', event => {
             o._data[propName] = event.target.value;

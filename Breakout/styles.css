@@ -1,0 +1,44 @@
+.grid {
+    width: 560px;
+    height: 300px;
+    border: solid 1px black;
+    position: absolute;
+    margin-top: 100px;
+}
+
+.dog {
+    position: absolute;
+    left: 600px;
+    top: 150px;
+    display: none;
+}
+
+.block {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: blue;
+}
+
+.user {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: blueviolet;
+}
+
+.ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+}
