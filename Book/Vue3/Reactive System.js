@@ -23,11 +23,15 @@ function trigger(target, key) {
 }
 // 注册副作用函数
 let activeEffect;
+const effectStack = [];
 function effect(fn) {
   const effectFn = () => {
     cleanup(effectFn);
     activeEffect = effectFn;
-    fn();
+    effectStack.push(effectFn);
+    fn(); // 这里发生了内层effect的添加与删除，递归思想
+    effectStack.pop();
+    activeEffect = effectStack[effectStack.length - 1];
   };
   effectFn.deps = [];
   effectFn();
@@ -38,8 +42,9 @@ function cleanup(effectFn) {
   });
   effectFn.deps.length = 0; // 重置 deps
 }
+
 // 监控数据的设置于读取行为
-const data = {};
+const data = { foo: true, bar: true };
 const obj = new Proxy(data, {
   get(target, key, receiver) {
     if (!activeEffect) return;
@@ -53,12 +58,19 @@ const obj = new Proxy(data, {
     trigger(target, key);
   },
 });
+let temp1, temp2;
 // 使用数据
 effect(() => {
-  console.log('effect run');
-  obj.text;
+  console.log('effect1 run');
+
+  effect(() => {
+    temp2 = obj.bar;
+    console.log('effect2 run');
+  });
+
+  temp1 = obj.foo;
 });
 
 setTimeout(() => {
-  obj.text = 'hello vue3';
+  obj.foo = 'hello vue3';
 }, 1000);
