@@ -18,7 +18,11 @@ function trigger(target, key) {
   const effects = depsMap.get(key);
 
   // 解决set无限循环问题
-  const effectsToRun = new Set(effects);
+  const effectsToRun = new Set();
+  effects &&
+    effects.forEach(effectFn => {
+      if (effectFn !== activeEffect) effectsToRun.add(effectFn);
+    });
   effectsToRun.forEach(effectFn => effectFn());
 }
 // 注册副作用函数
@@ -29,7 +33,7 @@ function effect(fn) {
     cleanup(effectFn);
     activeEffect = effectFn;
     effectStack.push(effectFn);
-    fn(); // 这里发生了内层effect的添加与删除，递归思想
+    fn();
     effectStack.pop();
     activeEffect = effectStack[effectStack.length - 1];
   };
@@ -44,7 +48,7 @@ function cleanup(effectFn) {
 }
 
 // 监控数据的设置于读取行为
-const data = { foo: true, bar: true };
+const data = { foo: 1 };
 const obj = new Proxy(data, {
   get(target, key, receiver) {
     if (!activeEffect) return;
@@ -61,16 +65,8 @@ const obj = new Proxy(data, {
 let temp1, temp2;
 // 使用数据
 effect(() => {
-  console.log('effect1 run');
-
-  effect(() => {
-    temp2 = obj.bar;
-    console.log('effect2 run');
-  });
-
-  temp1 = obj.foo;
+  obj.foo += 1;
 });
 
-setTimeout(() => {
-  obj.foo = 'hello vue3';
-}, 1000);
+obj.foo = 3;
+console.log(obj);
