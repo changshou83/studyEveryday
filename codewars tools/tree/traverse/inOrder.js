@@ -18,3 +18,5 @@ const inOrderWithEffect = (root, fn = () => {}, pre = undefined) => {
   }
   return pre !== undefined ? pre : res;
 };
+
+export { inOrder, inOrderWithEffect };
