@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Text</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Segoe UI, Roboto, Helvetica Neue, sans-serif;
+    }
+
+    video {
+      position: absolute;
+      inset: 1;
+      width: calc(100% - 2px);
+      height: calc(100% - 2px);
+      pointer-events: none;
+      object-fit: cover;
+    }
+
+    .text {
+      text-align: center;
+      padding: 10px;
+      background: white;
+      mix-blend-mode: lighten;
+      font-size: 150px;
+      font-weight: 900;
+      line-height: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="text-align: center;padding: 20px;">
+    <div style="position: relative; display: flex; flex-direction: column;">
+      <video
+        key="https://cdn.builder.io/o/assets%2F63f829e0e7a44824a11461f3037b38ed%2F321eda8b91344a349a2fe52c1400c348%2Fcompressed?apiKey=63f829e0e7a44824a11461f3037b38ed&token=321eda8b91344a349a2fe52c1400c348&alt=media&optimized=true"
+        autoplay muted plays-inline loop>
+        <source
+          src="https://cdn.builder.io/o/assets%2F63f829e0e7a44824a11461f3037b38ed%2F321eda8b91344a349a2fe52c1400c348%2Fcompressed?apiKey=63f829e0e7a44824a11461f3037b38ed&token=321eda8b91344a349a2fe52c1400c348&alt=media&optimized=true"
+          type="video/mp4" />
+      </video>
+      <div class="text">
+        So Cool!
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
