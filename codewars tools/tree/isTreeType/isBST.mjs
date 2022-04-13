@@ -1,4 +1,4 @@
-import { inOrder } from '../traverse/inOrder';
+import { inOrder } from '../traverse/inOrder.mjs';
 
 const isBST = root => {
   const arr = inOrder(root);
