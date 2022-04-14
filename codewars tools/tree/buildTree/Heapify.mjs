@@ -1,13 +1,4 @@
-const heapSort = arr => {
-  arr = buildMaxHeap(arr);
-  for (let i = arr.length - 1; i > 0; i--) {
-    [arr[0], arr[i]] = [arr[i], arr[0]]; // 将末尾元素与队顶元素交换，使末尾元素最大
-    arr = HeapAdjust(arr, i - 1); // 调整堆
-  }
-  return arr;
-};
-const buildMaxHeap = arr => arr.reduce((arr, _, i) => HeapAdjust(arr, i), arr);
-const HeapAdjust = (arr, i) => {
+const Heapify = (arr, i) => {
   let childNode = i;
   let rootNode;
   for (
@@ -33,5 +24,4 @@ const HeapAdjust = (arr, i) => {
   return arr;
 };
 
-console.log(buildMaxHeap([8, 5, 10, 12, 7, 6, 15]));
-console.log(heapSort([8, 5, 10, 12, 7, 6, 15]));
+export default Heapify;

@@ -1,6 +1,6 @@
-import l from '../testTools/l.mjs';
-import objArrEqual from '../testTools/objArrEqual.mjs';
-import { ascend, sortWith } from './sortWith.mjs';
+import l from '../../testTools/l.mjs';
+import objArrEqual from '../../testTools/objArrEqual.mjs';
+import { ascend, sortWith } from '../sortWith.mjs';
 
 var list = [
   {
