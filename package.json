@@ -2,5 +2,8 @@
   "dependencies": {
     "nodemon": "^2.0.15"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "chalk": "^4.1.2"
+  }
 }
