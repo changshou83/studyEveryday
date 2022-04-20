@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <svg t="1650444609288" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    p-id="5979" data-spm-anchor-id="a313x.7781069.0.i22" width="200" height="200">
+    <path d="M90.352941 963.764706h843.294118v60.235294H90.352941z" fill="#05AFC8" p-id="5980"
+      data-spm-anchor-id="a313x.7781069.0.i23" class=""></path>
+  </svg>
+  <script>
+    const covertSVG2Image = (node, name, width, height, type = 'png') => {
+      // 布置 canvas 画布
+      let canvas = document.createElement('canvas')
+      canvas.width = width
+      canvas.height = height
+      let context = canvas.getContext('2d')
+      context.fillStyle = '#fff'
+      context.fillRect(0, 0, 10000, 10000)
+
+      // 相关文档：https://developer.mozilla.org/zh-CN/docs/Web/API/XMLSerializer
+      // 解析 SVG元素 为XML字符串
+      let serializer = new XMLSerializer()
+      let source = '<?xml version="1.0" standalone="no"?>\r\n' + serializer.serializeToString(node)
+
+      // 生成 Image 对象
+      let image = new Image()
+      image.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(source)
+      image.onload = function () {
+        // 使用 canvas 将图片画出来
+        context.drawImage(image, 0, 0)
+        // 点击链接下载图片
+        let a = document.createElement('a')
+        a.download = `${name}.${type}`
+        a.href = canvas.toDataURL(`image/${type}`)
+        a.click()
+      }
+    }
+    // 示例
+    // covertSVG2Image(document.querySelector('svg'), 'underscore', 200, 220, 'png')
+  </script>
+</body>
+
+</html>
