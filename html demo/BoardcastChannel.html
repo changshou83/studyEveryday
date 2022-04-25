@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<body>
+  <button>updateSetting</button>
+  <p class="msg"></p>
+</body>
+
+<script>
+  const bc = new BroadcastChannel('my_channel');
+
+  const button = document.querySelector('button')
+  const msg = document.querySelector('.msg')
+  const updateMode = () => msg.innerHTML = 'Current Mode: ' + localStorage.getItem('mode')
+
+  bc.addEventListener('message', (messageEvent) => {
+    console.log(messageEvent)
+    if (messageEvent.data === 'setting_update') {
+      updateMode()
+    }
+  })
+
+  button.addEventListener('click', (e) => {
+    if (localStorage.getItem('mode') === 'night') {
+      localStorage.setItem('mode', 'today')
+    } else {
+      localStorage.setItem('mode', 'night')
+    }
+    bc.postMessage('setting_update');
+  })
+</script>
