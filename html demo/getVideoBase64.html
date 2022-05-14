@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function getVideoBase64(url) {
+      return new Promise((resolve, reject) => {
+        let dataURL = '';
+        let video = document.createElement("video");
+        video.setAttribute('crossOrigin', 'anonymous');//处理跨域
+        video.setAttribute('src', url);
+        video.setAttribute('width', 400);
+        video.setAttribute('height', 240);
+        video.setAttribute('preload', 'auto');
+        video.addEventListener('loadeddata', function () {
+          let canvas = document.createElement("canvas"),
+            width = video.width, //canvas的尺寸和图片一样
+            height = video.height;
+          canvas.width = width;
+          canvas.height = height;
+          canvas.getContext("2d").drawImage(video, 0, 0, width, height); //绘制canvas
+          dataURL = canvas.toDataURL('image/jpeg'); //转换为base64
+          resolve(dataURL);
+        });
+      })
+    }
+    async function init() {
+      const img = document.createElement('img')
+      img.src = await getVideoBase64('https://www.w3school.com.cn/example/html5/mov_bbb.mp4')
+      document.body.appendChild(img)
+    }
+    init()
+  </script>
+</body>
+
+</html>
