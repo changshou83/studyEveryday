@@ -8,3 +8,12 @@ function getArguments(func) {
       .split(',')
   );
 }
+
+function getArguments(func) {
+  return (
+    func.names ||
+    (
+      func.toString().match(/(?:^function ?\w*|\B)\((?:([\w, ]+)?)\)/m)[1] || ''
+    ).split(',')
+  );
+}
