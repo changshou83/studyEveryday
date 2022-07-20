@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function scale(num, opts = { o: [0, 10], t: [0, 100] }) {
+      const { o, t } = opts;
+      return ((num - o[0]) * (t[1] - t[0])) / (o[1] - o[0]) + t[0];
+    }
+    (async () => {
+      const fileBlob = await fetch('http://cdn.changshou83.site/koa-blog/articles/1658135706684aaf741b9af3b4')
+      // const fileBlob = await fetch('http://cdn.changshou83.site/koa-blog/articles/16580590532318c5ddc50fab2e')
+        .then((r) => r.blob())
+        .then((file) => file);
+        
+      const username = 'changshou83';
+      const watermark = `koa-blog @ ${username}`;
+      const reader = new FileReader();
+      reader.readAsDataURL(fileBlob);
+      reader.onload = () => {
+        const img = document.createElement('img');
+        img.src = reader.result;
+        img.onload = async () => {
+          const canvas = document.createElement('canvas');
+          canvas.width = img.naturalWidth;
+          canvas.height = img.naturalHeight;
+          const ctx = canvas.getContext('2d');
+          const fontSize = scale(54.45, { o: [0, 1980], t: [0, img.naturalWidth] });
+          // 根据中文和英文设置不同的位移
+          const displace = ((watermark.split('').reduce((len, c) => len + (/[a-z0-9\s\-@]/i.test(c) ? 1 : 2.2), 0)) * fontSize) / 2
+          const position = { x: img.naturalWidth - displace, y: img.naturalHeight - fontSize - 15 };
+          if(ctx) {
+            ctx.drawImage(img, 0, 0);
+            ctx.fillStyle = 'white';
+            ctx.textBaseline = 'middle';
+            ctx.font = `oblique ${fontSize}px 宋体 bold`;
+            ctx.fillText(watermark, position.x, position.y);
+          }
+          const newImg = await new Promise((resolve) => {
+            canvas.toBlob((canvasBlob) => {
+              const newImg = document.createElement("img"),
+                url = URL.createObjectURL(canvasBlob);
+  
+              newImg.onload = function () {
+                URL.revokeObjectURL(url);
+              };
+              newImg.src = url;
+              resolve(newImg);
+            });
+          });
+          document.body.appendChild(newImg);
+        };
+      }
+      
+    })()
+  </script>
+</body>
+</html>
