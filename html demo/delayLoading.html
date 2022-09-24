@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 300px;
+        height: 200px;
+        border: 1px solid #efeff4;
+        background: #ffffff;
+        overflow: auto;
+      }
+      .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        background: #25bb9b;
+        margin: 10px;
+        color: #ffffff;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+    <script>
+      new InfiniteScroll({
+        el: document.querySelector(".container"),
+        distance: 100,
+        call: (el, index) => {
+          const child = document.createElement("div");
+          child.textContent = index.toString();
+          child.className = "card";
+          el && el.appendChild(child);
+        },
+      });
+
+      function InfiniteScroll(param) {
+        const that = this;
+        const container = param.el;
+        const distance = +param.distance || 0;
+        if (!container) return;
+        that.index = 0;
+
+        param.call(param.el, that.index++);
+        param.call(param.el, that.index++);
+        container.addEventListener("scroll", () => _handleScroll());
+
+        function _handleScroll() {
+          const scrollTop = container.scrollTop;
+          const contentHeight = container.scrollHeight;
+          const height = container.clientHeight;
+          const shouldTrigger =
+            Math.abs(contentHeight - height - scrollTop) < distance;
+
+          if (!shouldTrigger) return;
+          param.call(container, that.index++);
+        }
+      }
+    </script>
+  </body>
+</html>
