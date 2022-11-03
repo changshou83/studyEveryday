@@ -1,5 +1,5 @@
 /**
- * least recently used,一种页面替换算法，可用来实现lru缓存
+ * least recently used,一种页面替换算法，可用来实现lru缓存,最近最久未使用，还有一种lfu，是最近最少被使用
  * @param n - 内存中的页数
  * @param referencesList - 表示页面引用的整数数组
  * @returns 内存阵列。
