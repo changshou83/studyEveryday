@@ -1,0 +1,25 @@
+@media (max-width: 980px) {
+  body {
+    width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    width: 98%;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .thumbs {
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+  }
+
+  .thumbs img {
+    margin: 0 0 10px 0;
+  }
+}

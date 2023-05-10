@@ -1,0 +1,16 @@
+@import url(./reset.css);
+@import url(./layout.css);
+@import url(./view_transition.css);
+@import url(./media_queries.css);
+@import url(./circle-transition.css);
+
+/* Text */
+h3, figcaption, a {
+  font-family: 'Roboto Slab', serif;
+}
+
+h3 {
+  text-align: center;
+}
+
+
