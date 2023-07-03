@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark Importer</title>
+  </head>
+  <body>
+    <h1>Bookmark Importer</h1>
+    <input type="file" id="fileInput" />
+    <button id="importButton">Import Bookmarks</button>
+
+    <script>
+      function generateBookmarksHTML(bookmarks) {
+        // Create the HTML file contents
+        const html = `
+        <!DOCTYPE NETSCAPE-Bookmark-file-1>
+        <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+        <TITLE>Bookmarks</TITLE>
+        <H1>Bookmarks</H1>
+        <DL><p>
+        ${generateBookmarkList(bookmarks)}
+        </DL><p>
+      `;
+
+        // Save the HTML file
+        const blob = new Blob([html], { type: "text/html;charset=utf-8" });
+        const fileName = `bookmarks${formatDate(new Date())}.html`;
+        downloadFile(blob, fileName);
+      }
+
+      function formatDate(date) {
+        const year = date.getFullYear();
+        const month = date.getMonth() + 1;
+        const day = date.getDate();
+        const hours = date.getHours();
+        const minutes = date.getMinutes();
+        const seconds = date.getSeconds();
+        return `${year}_${padZero(month)}_${padZero(day)} ${padZero(
+          hours
+        )}:${padZero(minutes)}:${padZero(seconds)}`;
+      }
+
+      function padZero(number) {
+        return number.toString().padStart(2, "0");
+      }
+
+      function downloadFile(url, filename) {
+        const link = document.createElement("a");
+        link.setAttribute("href", URL.createObjectURL(url));
+        link.setAttribute("download", filename);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+
+      function generateBookmarkList(bookmarks) {
+        let list = "";
+
+        for (const bookmark of bookmarks) {
+          if (bookmark.children) {
+            // If the bookmark has children, recursively generate the child list
+            list += `
+            <DT><H3>${bookmark.title}</H3>
+            <DL><p>
+            ${generateBookmarkList(bookmark.children)}
+            </DL><p>
+          `;
+          } else {
+            // If the bookmark does not have children, add it to the list
+            list += `<DT><A HREF="${bookmark.url}" ${
+              bookmark.add_date ? `ADD_DATE="${bookmark.add_date}"` : ""
+            }>${bookmark.title}</A>\n`;
+          }
+        }
+
+        return list;
+      }
+    </script>
+    <script>
+      var fileInput = document.getElementById("fileInput");
+      var importButton = document.getElementById("importButton");
+
+      // When the user selects a file, update the file name label
+      fileInput.addEventListener("change", function () {
+        var fileNameLabel = document.createElement("span");
+        fileNameLabel.textContent = fileInput.files[0].name;
+        fileInput.parentElement.appendChild(fileNameLabel);
+      });
+
+      // When the user clicks the import button, import the bookmarks
+      importButton.addEventListener("click", function () {
+        var bookmarksFile = fileInput.files[0];
+        if (bookmarksFile) {
+          // Create a new FileReader object
+          var reader = new FileReader();
+
+          // When the file is loaded, parse the bookmarks data
+          reader.onload = function (event) {
+            var bookmarks = JSON.parse(event.target.result);
+            console.log(bookmarks);
+            generateBookmarksHTML(bookmarks);
+          };
+
+          // Read the bookmarks file as a text file
+          reader.readAsText(bookmarksFile);
+        }
+      });
+    </script>
+  </body>
+</html>
