@@ -446,92 +446,92 @@
                         "children": [
                             {
                                 "title": "深入理解Vue实战",
-                                "url": "http: //www.godbasin.com/vue-ebook/",
+                                "url": "http://www.godbasin.com/vue-ebook/",
                                 "add_date": 1688426778024
                             },
                             {
                                 "title": "Vue3源码解读",
-                                "url": "https: //vue3js.cn/start/",
+                                "url": "https://vue3js.cn/start/",
                                 "add_date": 1688426778024
                             },
                             {
                                 "title": "逐行解析Vue源码",
-                                "url": "https: //vue-js.com/learn-vue/",
+                                "url": "https://vue-js.com/learn-vue/",
                                 "add_date": 1688426778024
                             },
                             {
                                 "title": "Vue技术揭秘",
-                                "url": "https: //ustbhuangyi.github.io/vue-analysis/",
+                                "url": "https://ustbhuangyi.github.io/vue-analysis/",
                                 "add_date": 1688426778024
                             },
                             {
                                 "title": "React技术揭秘",
-                                "url": "https: //react.iamkasong.com/",
+                                "url": "https://react.iamkasong.com/",
                                 "add_date": 1688426778024
                             },
                             {
                                 "title": "Mini-React",
-                                "url": "https: //github.com/zh-lx/mini-react",
+                                "url": "https://github.com/zh-lx/mini-react",
                                 "add_date": 1688426778024
                             },
                             {
                                 "title": "You Need To Know CSS",
-                                "url": "https: //lhammer.cn/You-need-to-know-css/#/zh-cn/",
+                                "url": "https://lhammer.cn/You-need-to-know-css/#/zh-cn/",
                                 "add_date": 1688426778024
                             },
                             {
                                 "title": "CSS Inspiration",
-                                "url": "https: //chokcoco.github.io/CSS-Inspiration/#/",
+                                "url": "https://chokcoco.github.io/CSS-Inspiration/#/",
                                 "add_date": 1688426778024
                             },
                             {
                                 "title": "Labuladong的算法小抄",
-                                "url": "https: //labuladong.github.io/algo/",
+                                "url": "https://labuladong.github.io/algo/",
                                 "add_date": 1688426778024
                             },
                             {
                                 "title": "Dive Into TS",
-                                "url": "https: //basarat.gitbook.io/typescript/",
+                                "url": "https://basarat.gitbook.io/typescript/",
                                 "add_date": 1688426778024
                             },
                             {
                                 "title": "SICP-JS",
-                                "url": "https: //sourceacademy.org/sicpjs/index",
+                                "url": "https://sourceacademy.org/sicpjs/index",
                                 "add_date": 1688426778024
                             },
                             {
                                 "title": "JS 20年",
-                                "url": "https: //cn.history.js.org/",
+                                "url": "https://cn.history.js.org/",
                                 "add_date": 1688426778024
                             },
                             {
                                 "title": "JS Info",
-                                "url": "https: //zh.javascript.info/",
+                                "url": "https://zh.javascript.info/",
                                 "add_date": 1688426778024
                             },
                             {
                                 "title": "前端设计模式",
-                                "url": "https: //pattern.windliang.wang/",
+                                "url": "https://pattern.windliang.wang/",
                                 "add_date": 1688426778024
                             },
                             {
                                 "title": "JS Study",
-                                "url": "https: //github.com/csxiaoyaojianxian/JavaScriptStudy",
+                                "url": "https://github.com/csxiaoyaojianxian/JavaScriptStudy",
                                 "add_date": 1688426778024
                             },
                             {
                                 "title": "RxJS学习指南",
-                                "url": "https: //rualc.com/frontend/rxjs/#rxjs-jian-jie",
+                                "url": "https://rualc.com/frontend/rxjs/#rxjs-jian-jie",
                                 "add_date": 1688426778024
                             },
                             {
                                 "title": "WTFJS",
-                                "url": "https: //github.com/denysdovhan/wtfjs/blob/master/README-zh-cn.md",
+                                "url": "https://github.com/denysdovhan/wtfjs/blob/master/README-zh-cn.md",
                                 "add_date": 1688426778024
                             },
                             {
                                 "title": "FE Necessary Book",
-                                "url": "https: //github.com/ddzy/fe-necessary-book",
+                                "url": "https://github.com/ddzy/fe-necessary-book",
                                 "add_date": 1688426778024
                             }
                         ]
@@ -542,42 +542,42 @@
                         "children": [
                             {
                                 "title": "Heart First Java Web",
-                                "url": "https: //skyline75489.github.io/Heart-First-JavaWeb/",
+                                "url": "https://skyline75489.github.io/Heart-First-JavaWeb/",
                                 "add_date": 1688426822580
                             },
                             {
                                 "title": "Build Web Application With Golang",
-                                "url": "https: //github.com/astaxie/build-web-application-with-golang/blob/master/zh/preface.md",
+                                "url": "https://github.com/astaxie/build-web-application-with-golang/blob/master/zh/preface.md",
                                 "add_date": 1688426822580
                             },
                             {
                                 "title": "DB Tutorial",
-                                "url": "https: //dunwu.github.io/db-tutorial/",
+                                "url": "https://dunwu.github.io/db-tutorial/",
                                 "add_date": 1688426822580
                             },
                             {
                                 "title": "Let's Build A Simple DB",
-                                "url": "https: //cstack.github.io/db_tutorial/",
+                                "url": "https://cstack.github.io/db_tutorial/",
                                 "add_date": 1688426822580
                             },
                             {
                                 "title": "DDIA",
-                                "url": "https: //github.com/Vonng/ddia/blob/master/part-i.md",
+                                "url": "https://github.com/Vonng/ddia/blob/master/part-i.md",
                                 "add_date": 1688426822580
                             },
                             {
                                 "title": "Node Best Practices",
-                                "url": "https: //github.com/goldbergyoni/nodebestpractices/blob/master/README.chinese.md#table-of-contents",
+                                "url": "https://github.com/goldbergyoni/nodebestpractices/blob/master/README.chinese.md#table-of-contents",
                                 "add_date": 1688426822580
                             },
                             {
                                 "title": "Node 技术栈",
-                                "url": "https: //www.nodejs.red/#/README",
+                                "url": "https://www.nodejs.red/#/README",
                                 "add_date": 1688426822580
                             },
                             {
                                 "title": "Libuv中文教程",
-                                "url": "http: //luohaha.github.io/Chinese-uvbook/index.html",
+                                "url": "http://luohaha.github.io/Chinese-uvbook/index.html",
                                 "add_date": 1688426822580
                             }
                         ]
@@ -588,17 +588,17 @@
                         "children": [
                             {
                                 "title": "运维实践指南",
-                                "url": "https: //billwang139967.gitbooks.io/op_practice_book/content/",
+                                "url": "https://billwang139967.gitbooks.io/op_practice_book/content/",
                                 "add_date": 1688426858725
                             },
                             {
                                 "title": "Docker：从入门到实践",
-                                "url": "https: //yeasy.gitbook.io/docker_practice/introduction",
+                                "url": "https://yeasy.gitbook.io/docker_practice/introduction",
                                 "add_date": 1688426858725
                             },
                             {
                                 "title": "K8S 基础教程",
-                                "url": "https: //lib.jimmysong.io/kubernetes-handbook/",
+                                "url": "https://lib.jimmysong.io/kubernetes-handbook/",
                                 "add_date": 1688426858725
                             }
                         ]
@@ -609,17 +609,17 @@
                         "children": [
                             {
                                 "title": "WebGL Fundamentals",
-                                "url": "https: //webglfundamentals.org/webgl/lessons/zh_cn/webgl-fundamentals.html",
+                                "url": "https://webglfundamentals.org/webgl/lessons/zh_cn/webgl-fundamentals.html",
                                 "add_date": 1688426884484
                             },
                             {
                                 "title": "Learning WebGL",
-                                "url": "http: //learnwebgl.brown37.net/index.html",
+                                "url": "http://learnwebgl.brown37.net/index.html",
                                 "add_date": 1688426884484
                             },
                             {
                                 "title": "The Book Of Shader",
-                                "url": "https: //thebookofshaders.com/01/?lan=ch",
+                                "url": "https://thebookofshaders.com/01/?lan=ch",
                                 "add_date": 1688426884484
                             }
                         ]
@@ -632,57 +632,57 @@
                 "children": [
                     {
                         "title": "OS-Tsinghua",
-                        "url": "https: //www.xuetangx.com/course/THU08091000267/12424484?channel=i.area.learn_title",
+                        "url": "https://www.xuetangx.com/course/THU08091000267/12424484?channel=i.area.learn_title",
                         "add_date": 1688426943949
                     },
                     {
                         "title": "BaiduDisk",
-                        "url": "https: //pan.baidu.com/disk/main?from=homeFlow#/index?category=all",
+                        "url": "https://pan.baidu.com/disk/main?from=homeFlow#/index?category=all",
                         "add_date": 1688426943949
                     },
                     {
                         "title": "程序语言理论与实现",
-                        "url": "https: //bobzhang.github.io/courses/",
+                        "url": "https://bobzhang.github.io/courses/",
                         "add_date": 1688426943949
                     },
                     {
                         "title": "Web2ToWeb3",
-                        "url": "https: //www.wtf.academy/learning-center",
+                        "url": "https://www.wtf.academy/learning-center",
                         "add_date": 1688426943949
                     },
                     {
                         "title": "KodeKloud-DevOps",
-                        "url": "https: //kodekloud.com/",
+                        "url": "https://kodekloud.com/",
                         "add_date": 1688426943949
                     },
                     {
                         "title": "Learning Music",
-                        "url": "https: //learningmusic.ableton.com/zh-Hans/index.html",
+                        "url": "https://learningmusic.ableton.com/zh-Hans/index.html",
                         "add_date": 1688426943949
                     },
                     {
                         "title": "Threejs Journey",
-                        "url": "https: //threejs-journey.com/lessons/introduction",
+                        "url": "https://threejs-journey.com/lessons/introduction",
                         "add_date": 1688426943949
                     },
                     {
                         "title": "React Three Fiber",
-                        "url": "https: //journey.pmnd.rs/",
+                        "url": "https://journey.pmnd.rs/",
                         "add_date": 1688426943949
                     },
                     {
                         "title": "Nand2tertris",
-                        "url": "https: //github.com/woai3c/nand2tetris",
+                        "url": "https://github.com/woai3c/nand2tetris",
                         "add_date": 1688426943949
                     },
                     {
                         "title": "Algorithms-Part Oen",
-                        "url": "https: //www.coursera.org/learn/algorithms-part1",
+                        "url": "https://www.coursera.org/learn/algorithms-part1",
                         "add_date": 1688426943949
                     },
                     {
                         "title": "Miss Semester",
-                        "url": "https: //missing-semester-cn.github.io/2020/",
+                        "url": "https://missing-semester-cn.github.io/2020/",
                         "add_date": 1688426943949
                     },
                     {
@@ -691,32 +691,32 @@
                         "children": [
                             {
                                 "title": "空白得很",
-                                "url": "https: //space.bilibili.com/11375865/video",
+                                "url": "https://space.bilibili.com/11375865/video",
                                 "add_date": 1688426996055
                             },
                             {
                                 "title": "菲菲资源",
-                                "url": "https: //space.bilibili.com/1851256541/channel/series",
+                                "url": "https://space.bilibili.com/1851256541/channel/series",
                                 "add_date": 1688426996055
                             },
                             {
                                 "title": "The itzy 资源网",
-                                "url": "https: //space.bilibili.com/314509002/channel/series",
+                                "url": "https://space.bilibili.com/314509002/channel/series",
                                 "add_date": 1688426996055
                             },
                             {
                                 "title": "鬼谷良师",
-                                "url": "https: //space.bilibili.com/400647031/channel/series",
+                                "url": "https://space.bilibili.com/400647031/channel/series",
                                 "add_date": 1688426996055
                             },
                             {
                                 "title": "疯狂的小黑",
-                                "url": "https: //space.bilibili.com/481361060/channel/series",
+                                "url": "https://space.bilibili.com/481361060/channel/series",
                                 "add_date": 1688426996055
                             },
                             {
                                 "title": "狂神说Java",
-                                "url": "https: //www.bilibili.com/video/BV12J41137hu/?spm_id_from=333.999.0.0&vd_source=c81c885fcba071b7311cef27d5b0868e",
+                                "url": "https://www.bilibili.com/video/BV12J41137hu/?spm_id_from=333.999.0.0&vd_source=c81c885fcba071b7311cef27d5b0868e",
                                 "add_date": 1688426996055
                             }
                         ]
@@ -729,42 +729,42 @@
                 "children": [
                     {
                         "title": "CSDiy",
-                        "url": "https: //csdiy.wiki/",
+                        "url": "https://csdiy.wiki/",
                         "add_date": 1688427036598
                     },
                     {
                         "title": "AliTech",
-                        "url": "https: //f2e.tech/",
+                        "url": "https://f2e.tech/",
                         "add_date": 1688427036598
                     },
                     {
                         "title": "Roadmap",
-                        "url": "https: //roadmap.sh",
+                        "url": "https://roadmap.sh",
                         "add_date": 1688427036598
                     },
                     {
                         "title": "CTF Hub",
-                        "url": "https: //www.ctfhub.com/#/index",
+                        "url": "https://www.ctfhub.com/#/index",
                         "add_date": 1688427036598
                     },
                     {
                         "title": "看源码",
-                        "url": "https: //www.zhihu.com/question/350289336/answer/873350617",
+                        "url": "https://www.zhihu.com/question/350289336/answer/873350617",
                         "add_date": 1688427036598
                     },
                     {
                         "title": "TeachYourself",
-                        "url": "https: //github.com/izackwu/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md",
+                        "url": "https://github.com/izackwu/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md",
                         "add_date": 1688427036598
                     },
                     {
                         "title": "OSSU",
-                        "url": "https: //github.com/ossu/computer-science",
+                        "url": "https://github.com/ossu/computer-science",
                         "add_date": 1688427036598
                     },
                     {
                         "title": "Code Interview University",
-                        "url": "https: //github.com/jwasham/coding-interview-university",
+                        "url": "https://github.com/jwasham/coding-interview-university",
                         "add_date": 1688427036598
                     }
                 ]
@@ -777,17 +777,17 @@
         "children": [
             {
                 "title": "数据分析与可视化指南",
-                "url": "https: //help.fanruan.com/dvg/",
+                "url": "https://help.fanruan.com/dvg/",
                 "add_date": 1688427141172
             },
             {
                 "title": "FineBI帮助文档",
-                "url": "https: //help.fanruan.com/finebi/",
+                "url": "https://help.fanruan.com/finebi/",
                 "add_date": 1688427141172
             },
             {
                 "title": "Dataease Demo",
-                "url": "https: //dataease.fit2cloud.com/#/wizard/index",
+                "url": "https://dataease.fit2cloud.com/#/wizard/index",
                 "add_date": 1688427141172
             }
         ]
@@ -798,57 +798,57 @@
         "children": [
             {
                 "title": "Railway",
-                "url": "https: //railway.app/",
+                "url": "https://railway.app/",
                 "add_date": 1688427188221
             },
             {
                 "title": "Vercel",
-                "url": "https: //vercel.com/",
+                "url": "https://vercel.com/",
                 "add_date": 1688427188221
             },
             {
                 "title": "Netlify",
-                "url": "https: //www.netlify.com/",
+                "url": "https://www.netlify.com/",
                 "add_date": 1688427188221
             },
             {
                 "title": "坚果云",
-                "url": "https: //www.jianguoyun.com/#/",
+                "url": "https://www.jianguoyun.com/#/",
                 "add_date": 1688427188221
             },
             {
                 "title": "Regex",
-                "url": "https: //regex101.com/",
+                "url": "https://regex101.com/",
                 "add_date": 1688427188221
             },
             {
                 "title": "Regex Visualizer",
-                "url": "https: //jex.im/regulex/#!flags=&re=%5E(a%7Cb)*%3F%24",
+                "url": "https://jex.im/regulex/#!flags=&re=%5E(a%7Cb)*%3F%24",
                 "add_date": 1688427188221
             },
             {
                 "title": "CloudFlare",
-                "url": "https: //dash.cloudflare.com/login",
+                "url": "https://dash.cloudflare.com/login",
                 "add_date": 1688427188221
             },
             {
                 "title": "SVGToPNG",
-                "url": "https: //svgtopng.com/zh/",
+                "url": "https://svgtopng.com/zh/",
                 "add_date": 1688427188221
             },
             {
                 "title": "Ascii Text",
-                "url": "https: //www.kammerl.de/ascii/AsciiSignature.php",
+                "url": "https://www.kammerl.de/ascii/AsciiSignature.php",
                 "add_date": 1688427188221
             },
             {
                 "title": "颜文字",
-                "url": "http: //www.hehuan.co/yanwenzi/1532357736.html",
+                "url": "http://www.hehuan.co/yanwenzi/1532357736.html",
                 "add_date": 1688427188221
             },
             {
                 "title": "zhelper",
-                "url": "https: //search.zhelper.net/enhanced?[%7B%22name%22:%22Ylibrary%22,%22url%22:%22https://api.ylibrary.org%22,%22type%22:%22full%22,%22sensitive%22:false,%22detail%22:true%7D,%7B%22name%22:%22zlib.app%22,%22url%22:%22https://api.zlib.app%22,%22type%22:%22full%22,%22sensitive%22:false,%22detail%22:false,%22download%22:%22https://d.zlib.app/download/%22%7D,%7B%22name%22:%22bookpan%22,%22url%22:%22https://api.bookpan.net%22,%22type%22:%22light%22,%22sensitive%22:false,%22detail%22:true%7D]",
+                "url": "https://search.zhelper.net/enhanced?[%7B%22name%22:%22Ylibrary%22,%22url%22:%22https://api.ylibrary.org%22,%22type%22:%22full%22,%22sensitive%22:false,%22detail%22:true%7D,%7B%22name%22:%22zlib.app%22,%22url%22:%22https://api.zlib.app%22,%22type%22:%22full%22,%22sensitive%22:false,%22detail%22:false,%22download%22:%22https://d.zlib.app/download/%22%7D,%7B%22name%22:%22bookpan%22,%22url%22:%22https://api.bookpan.net%22,%22type%22:%22light%22,%22sensitive%22:false,%22detail%22:true%7D]",
                 "add_date": 1688427188221
             },
             {
@@ -857,37 +857,37 @@
                 "children": [
                     {
                         "title": "gitstalk",
-                        "url": "https: //gitstalk.netlify.app/",
+                        "url": "https://gitstalk.netlify.app/",
                         "add_date": 1688427330025
                     },
                     {
                         "title": "开发者工具箱(山月出品)",
-                        "url": "https: //devtool.tech/",
+                        "url": "https://devtool.tech/",
                         "add_date": 1688427330025
                     },
                     {
                         "title": "渐变色",
-                        "url": "https: //flatuicolors.com/",
+                        "url": "https://flatuicolors.com/",
                         "add_date": 1688427330025
                     },
                     {
                         "title": "蒙昆工具箱",
-                        "url": "http: //tool.mkblog.cn/",
+                        "url": "http://tool.mkblog.cn/",
                         "add_date": 1688427330025
                     },
                     {
                         "title": "Github Error Solve",
-                        "url": "https: //github-error-solve.vercel.app/",
+                        "url": "https://github-error-solve.vercel.app/",
                         "add_date": 1688427330025
                     },
                     {
                         "title": "Beautiful Code Img",
-                        "url": "https: //carbon.now.sh/",
+                        "url": "https://carbon.now.sh/",
                         "add_date": 1688427330025
                     },
                     {
                         "title": "Perflink",
-                        "url": "https: //perf.link/#eyJpZCI6ImZ3N3E3ZWs3Mm5xIiwidGl0bGUiOiJGaW5kaW5nIG51bWJlcnMgaW4gYW4gYXJyYXkgb2YgMTAwMCIsImJlZm9yZSI6ImNvbnN0IGRhdGEgPSBbLi4uQXJyYXkoMTAwMCkua2V5cygpXSIsInRlc3RzIjpbeyJuYW1lIjoiRmluZCBpdGVtIDEwMCIsImNvZGUiOiJkYXRhLmZpbmQoeCA9PiB4ID09IDEwMCkiLCJvcHMiOjIwMzM2MH0seyJuYW1lIjoiRmluZCBpdGVtIDIwMCIsImNvZGUiOiJkYXRhLmZpbmQoeCA9PiB4ID09IDIwMCkiLCJvcHMiOjk5NTYwfSx7Im5hbWUiOiJGaW5kIGl0ZW0gNDAwIiwiY29kZSI6ImRhdGEuZmluZCh4ID0%2BIHggPT0gNDAwKSIsIm9wcyI6NTUzNTB9LHsibmFtZSI6IkZpbmQgaXRlbSA4MDAiLCJjb2RlIjoiZGF0YS5maW5kKHggPT4geCA9PSA4MDApIiwib3BzIjoyNzY2MH1dLCJ1cGRhdGVkIjoiMjAyMy0wNi0yNFQxMDoxMjozNC44NjZaIn0%3D",
+                        "url": "https://perf.link/#eyJpZCI6ImZ3N3E3ZWs3Mm5xIiwidGl0bGUiOiJGaW5kaW5nIG51bWJlcnMgaW4gYW4gYXJyYXkgb2YgMTAwMCIsImJlZm9yZSI6ImNvbnN0IGRhdGEgPSBbLi4uQXJyYXkoMTAwMCkua2V5cygpXSIsInRlc3RzIjpbeyJuYW1lIjoiRmluZCBpdGVtIDEwMCIsImNvZGUiOiJkYXRhLmZpbmQoeCA9PiB4ID09IDEwMCkiLCJvcHMiOjIwMzM2MH0seyJuYW1lIjoiRmluZCBpdGVtIDIwMCIsImNvZGUiOiJkYXRhLmZpbmQoeCA9PiB4ID09IDIwMCkiLCJvcHMiOjk5NTYwfSx7Im5hbWUiOiJGaW5kIGl0ZW0gNDAwIiwiY29kZSI6ImRhdGEuZmluZCh4ID0%2BIHggPT0gNDAwKSIsIm9wcyI6NTUzNTB9LHsibmFtZSI6IkZpbmQgaXRlbSA4MDAiLCJjb2RlIjoiZGF0YS5maW5kKHggPT4geCA9PSA4MDApIiwib3BzIjoyNzY2MH1dLCJ1cGRhdGVkIjoiMjAyMy0wNi0yNFQxMDoxMjozNC44NjZaIn0%3D",
                         "add_date": 1688427330025
                     }
                 ]
@@ -898,12 +898,12 @@
                 "children": [
                     {
                         "title": "VSCode Snippet Generator",
-                        "url": "https: //snippet-generator.app/",
+                        "url": "https://snippet-generator.app/",
                         "add_date": 1688427357464
                     },
                     {
                         "title": "Nginx Config",
-                        "url": "https: //www.digitalocean.com/community/tools/nginx?global.app.lang=zhCN",
+                        "url": "https://www.digitalocean.com/community/tools/nginx?global.app.lang=zhCN",
                         "add_date": 1688427357464
                     }
                 ]
@@ -914,12 +914,12 @@
                 "children": [
                     {
                         "title": "TinyEye",
-                        "url": "https: //tineye.com/",
+                        "url": "https://tineye.com/",
                         "add_date": 1688427380707
                     },
                     {
                         "title": "Saucenao",
-                        "url": "https: //saucenao.com/",
+                        "url": "https://saucenao.com/",
                         "add_date": 1688427380707
                     }
                 ]
@@ -932,57 +932,57 @@
         "children": [
             {
                 "title": "Movie Dog",
-                "url": "https: //www.dianyinggou.com/",
+                "url": "https://www.dianyinggou.com/",
                 "add_date": 1688427411648
             },
             {
                 "title": "Sumtba.se",
-                "url": "https: //smutba.se/",
+                "url": "https://smutba.se/",
                 "add_date": 1688427411648
             },
             {
                 "title": "数据库设计大全",
-                "url": "https: //open.yesapi.cn/list66.html",
+                "url": "https://open.yesapi.cn/list66.html",
                 "add_date": 1688427411648
             },
             {
                 "title": "腾讯云促销活动",
-                "url": "https: //cloud.tencent.com/act",
+                "url": "https://cloud.tencent.com/act",
                 "add_date": 1688427411648
             },
             {
                 "title": "ohshitgit",
-                "url": "https: //ohshitgit.com/zh",
+                "url": "https://ohshitgit.com/zh",
                 "add_date": 1688427411648
             },
             {
                 "title": "Free JS Resources",
-                "url": "https: //www.java5cript.com/",
+                "url": "https://www.java5cript.com/",
                 "add_date": 1688427411648
             },
             {
                 "title": "Class Central",
-                "url": "https: //www.classcentral.com/",
+                "url": "https://www.classcentral.com/",
                 "add_date": 1688427411648
             },
             {
                 "title": "导航文库",
-                "url": "https: //docs.apachecn.org/",
+                "url": "https://docs.apachecn.org/",
                 "add_date": 1688427411648
             },
             {
                 "title": "猫爪导航",
-                "url": "https: //www.v2fy.com/",
+                "url": "https://www.v2fy.com/",
                 "add_date": 1688427411648
             },
             {
                 "title": "Free Programming Books",
-                "url": "https: //github.com/justjavac/free-programming-books-zh_CN",
+                "url": "https://github.com/justjavac/free-programming-books-zh_CN",
                 "add_date": 1688427411648
             },
             {
                 "title": "Toools.design",
-                "url": "https: //www.toools.design/",
+                "url": "https://www.toools.design/",
                 "add_date": 1688427411648
             },
             {
@@ -991,27 +991,27 @@
                 "children": [
                     {
                         "title": "Get Cloud",
-                        "url": "https: //egjplmujirj2tbj9wuzy.wgetcloud.org/login",
+                        "url": "https://egjplmujirj2tbj9wuzy.wgetcloud.org/login",
                         "add_date": 1688427513179
                     },
                     {
                         "title": "Cylink",
-                        "url": "https: //cylink.me/user/shop",
+                        "url": "https://cylink.me/user/shop",
                         "add_date": 1688427513179
                     },
                     {
                         "title": "Gsou Cloud",
-                        "url": "https: //gsou.link/auth/login##",
+                        "url": "https://gsou.link/auth/login##",
                         "add_date": 1688427513179
                     },
                     {
                         "title": "自由猫",
-                        "url": "https: //us.freecat.cloud/index.php#/login",
+                        "url": "https://us.freecat.cloud/index.php#/login",
                         "add_date": 1688427513179
                     },
                     {
                         "title": "魔戒",
-                        "url": "https: //www.mojie.vip/#/dashboard",
+                        "url": "https://www.mojie.vip/#/dashboard",
                         "add_date": 1688427513179
                     }
                 ]
@@ -1022,52 +1022,52 @@
                 "children": [
                     {
                         "title": "飞雪娱乐网",
-                        "url": "https: //feixueylw.com/",
+                        "url": "https://feixueylw.com/",
                         "add_date": 1688427545415
                     },
                     {
                         "title": "琉璃神社",
-                        "url": "https: //www.hacg.sbs/wp/",
+                        "url": "https://www.hacg.sbs/wp/",
                         "add_date": 1688427545415
                     },
                     {
                         "title": "灵梦御所",
-                        "url": "https: //blog.reimu.net/",
+                        "url": "https://blog.reimu.net/",
                         "add_date": 1688427545415
                     },
                     {
                         "title": "次元控",
-                        "url": "https: //acgcyk1.com/",
+                        "url": "https://acgcyk1.com/",
                         "add_date": 1688427545415
                     },
                     {
                         "title": "OSU资源站",
-                        "url": "https: //osu.sayobot.cn/home",
+                        "url": "https://osu.sayobot.cn/home",
                         "add_date": 1688427545415
                     },
                     {
                         "title": "Valorant 准星",
-                        "url": "https: //www.vcrdb.net/",
+                        "url": "https://www.vcrdb.net/",
                         "add_date": 1688427545415
                     },
                     {
                         "title": "Valorant 战术",
-                        "url": "https: //valoplant.gg/zh",
+                        "url": "https://valoplant.gg/zh",
                         "add_date": 1688427545415
                     },
                     {
                         "title": "无字幕",
-                        "url": "https: //www.kissacg.org/portal.php",
+                        "url": "https://www.kissacg.org/portal.php",
                         "add_date": 1688427545415
                     },
                     {
                         "title": "BiliBili视频下载",
-                        "url": "https: //xbeibeix.com/api/bilibili/",
+                        "url": "https://xbeibeix.com/api/bilibili/",
                         "add_date": 1688427545415
                     },
                     {
                         "title": "长寿的Resources",
-                        "url": "https: //changshou83.github.io/my-blog/essay/resources.html",
+                        "url": "https://changshou83.github.io/my-blog/essay/resources.html",
                         "add_date": 1688427545415
                     }
                 ]
@@ -1078,17 +1078,17 @@
                 "children": [
                     {
                         "title": "MSDN",
-                        "url": "https: //msdn.itellyou.cn/",
+                        "url": "https://msdn.itellyou.cn/",
                         "add_date": 1688427580059
                     },
                     {
                         "title": "伤逝的安详",
-                        "url": "https: //www.ssdax.com/topics/software/",
+                        "url": "https://www.ssdax.com/topics/software/",
                         "add_date": 1688427580059
                     },
                     {
                         "title": "吴川斌",
-                        "url": "https: //www.mr-wu.cn/",
+                        "url": "https://www.mr-wu.cn/",
                         "add_date": 1688427580059
                     }
                 ]
@@ -1099,12 +1099,12 @@
                 "children": [
                     {
                         "title": "ManyPixels",
-                        "url": "https: //www.manypixels.co/gallery",
+                        "url": "https://www.manypixels.co/gallery",
                         "add_date": 1688427607829
                     },
                     {
                         "title": "unDraw",
-                        "url": "https: //undraw.co/illustrations",
+                        "url": "https://undraw.co/illustrations",
                         "add_date": 1688427607829
                     }
                 ]
@@ -1117,22 +1117,22 @@
         "children": [
             {
                 "title": "Spotify",
-                "url": "https: //open.spotify.com/",
+                "url": "https://open.spotify.com/",
                 "add_date": 1688427487721
             },
             {
                 "title": "App Music",
-                "url": "https: //music.apple.com/cn/listen-now",
+                "url": "https://music.apple.com/cn/listen-now",
                 "add_date": 1688427487721
             },
             {
                 "title": "Lofi.cate",
-                "url": "https: //www.lofi.cafe/",
+                "url": "https://www.lofi.cafe/",
                 "add_date": 1688427487721
             },
             {
                 "title": "Music For programming",
-                "url": "https: //musicforprogramming.net/latest/",
+                "url": "https://musicforprogramming.net/latest/",
                 "add_date": 1688427487721
             }
         ]
@@ -1147,27 +1147,27 @@
                 "children": [
                     {
                         "title": "卡尔",
-                        "url": "https: //programmercarl.com/",
+                        "url": "https://programmercarl.com/",
                         "add_date": 1688427690970
                     },
                     {
                         "title": "OI Wiki",
-                        "url": "https: //oi-wiki.org/",
+                        "url": "https://oi-wiki.org/",
                         "add_date": 1688427690970
                     },
                     {
                         "title": "宫水三叶",
-                        "url": "https: //www.acoier.com/",
+                        "url": "https://www.acoier.com/",
                         "add_date": 1688427690970
                     },
                     {
                         "title": "Weekly Contest Archive",
-                        "url": "https: //lccn.lbao.site/",
+                        "url": "https://lccn.lbao.site/",
                         "add_date": 1688427690970
                     },
                     {
                         "title": "我在阿里招前端，我该怎么帮你？",
-                        "url": "https: //segmentfault.com/a/1190000021761594",
+                        "url": "https://segmentfault.com/a/1190000021761594",
                         "add_date": 1688427690970
                     }
                 ]
@@ -1178,32 +1178,32 @@
                 "children": [
                     {
                         "title": "LeetCode",
-                        "url": "https: //leetcode.cn/problemset/all/",
+                        "url": "https://leetcode.cn/problemset/all/",
                         "add_date": 1688427714282
                     },
                     {
                         "title": "CodeWar",
-                        "url": "https: //www.codewars.com/dashboard",
+                        "url": "https://www.codewars.com/dashboard",
                         "add_date": 1688427714282
                     },
                     {
                         "title": "BFE",
-                        "url": "https: //bigfrontend.dev/zh",
+                        "url": "https://bigfrontend.dev/zh",
                         "add_date": 1688427714282
                     },
                     {
                         "title": "Shader Toy",
-                        "url": "https: //www.shadertoy.com/",
+                        "url": "https://www.shadertoy.com/",
                         "add_date": 1688427714282
                     },
                     {
                         "title": "AOC",
-                        "url": "https: //adventofcode.com/",
+                        "url": "https://adventofcode.com/",
                         "add_date": 1688427714282
                     },
                     {
                         "title": "ShowMeBug",
-                        "url": "https: //www.showmebug.com/developer",
+                        "url": "https://www.showmebug.com/developer",
                         "add_date": 1688427714282
                     }
                 ]
@@ -1214,7 +1214,7 @@
                 "children": [
                     {
                         "title": "牛客",
-                        "url": "https: //www.nowcoder.com/",
+                        "url": "https://www.nowcoder.com/",
                         "add_date": 1688427734171
                     }
                 ]
@@ -1225,77 +1225,77 @@
                 "children": [
                     {
                         "title": "小林",
-                        "url": "https: //xiaolincoding.com/",
+                        "url": "https://xiaolincoding.com/",
                         "add_date": 1688427776906
                     },
                     {
                         "title": "cyc",
-                        "url": "http: //www.cyc2018.xyz/",
+                        "url": "http://www.cyc2018.xyz/",
                         "add_date": 1688427776906
                     },
                     {
                         "title": "前端躬行记",
-                        "url": "https: //www.kancloud.cn/pwstrick/fe-questions/1094971",
+                        "url": "https://www.kancloud.cn/pwstrick/fe-questions/1094971",
                         "add_date": 1688427776906
                     },
                     {
                         "title": "Web全栈体系",
-                        "url": "https: //senior-frontend.pages.dev/",
+                        "url": "https://senior-frontend.pages.dev/",
                         "add_date": 1688427776906
                     },
                     {
                         "title": "Web前端面试-面试官系列",
-                        "url": "https: //vue3js.cn/interview/",
+                        "url": "https://vue3js.cn/interview/",
                         "add_date": 1688427776906
                     },
                     {
                         "title": "Touchczy",
-                        "url": "https: //blog.touchczy.top/#/",
+                        "url": "https://blog.touchczy.top/#/",
                         "add_date": 1688427776906
                     },
                     {
                         "title": "驳Vue常见面试题",
-                        "url": "https: //juejin.cn/post/6844904118704668685",
+                        "url": "https://juejin.cn/post/6844904118704668685",
                         "add_date": 1688427776906
                     },
                     {
                         "title": "Nodejs Interview",
-                        "url": "https: //elemefe.github.io/node-interview/#/",
+                        "url": "https://elemefe.github.io/node-interview/#/",
                         "add_date": 1688427776906
                     },
                     {
                         "title": "What Happens When",
-                        "url": "https: //github.com/skyline75489/what-happens-when-zh_CN",
+                        "url": "https://github.com/skyline75489/what-happens-when-zh_CN",
                         "add_date": 1688427776906
                     },
                     {
                         "title": "MySQL系列教程",
-                        "url": "https: //zq99299.github.io/mysql-tutorial/",
+                        "url": "https://zq99299.github.io/mysql-tutorial/",
                         "add_date": 1688427776906
                     },
                     {
                         "title": "Ali笔试",
-                        "url": "https: //hit-alibaba.github.io/interview/",
+                        "url": "https://hit-alibaba.github.io/interview/",
                         "add_date": 1688427776906
                     },
                     {
                         "title": "反问",
-                        "url": "https: //github.com/yifeikong/reverse-interview-zh",
+                        "url": "https://github.com/yifeikong/reverse-interview-zh",
                         "add_date": 1688427776906
                     },
                     {
                         "title": "吴师兄学算法",
-                        "url": "https: //blog.algomooc.com/",
+                        "url": "https://blog.algomooc.com/",
                         "add_date": 1688427776906
                     },
                     {
                         "title": "算法可视化",
-                        "url": "https: //algorithm-visualizer.org/",
+                        "url": "https://algorithm-visualizer.org/",
                         "add_date": 1688427776906
                     },
                     {
                         "title": "图解前端",
-                        "url": "https: //lucifer.ren/fe-interview/#/?id=%e5%a4%a7%e5%89%8d%e7%ab%af%e9%9d%a2%e8%af%95%e5%ae%9d%e5%85%b8-%e5%9b%be%e8%a7%a3%e5%89%8d%e7%ab%af",
+                        "url": "https://lucifer.ren/fe-interview/#/?id=%e5%a4%a7%e5%89%8d%e7%ab%af%e9%9d%a2%e8%af%95%e5%ae%9d%e5%85%b8-%e5%9b%be%e8%a7%a3%e5%89%8d%e7%ab%af",
                         "add_date": 1688427776906
                     }
                 ]

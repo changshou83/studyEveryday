@@ -142,11 +142,11 @@ Study
   Algorithms-Part Oen:https://www.coursera.org/learn/algorithms-part1
   Miss Semester:https://missing-semester-cn.github.io/2020/
   Bill
-   空白得很:https://space.bilibili.com/11375865/video
-   菲菲资源:https://space.bilibili.com/1851256541/channel/series
-   The itzy 资源网:https://space.bilibili.com/314509002/channel/series
-   鬼谷良师:https://space.bilibili.com/400647031/channel/series
-   疯狂的小黑:https://space.bilibili.com/481361060/channel/series
+   空白得很:https://space.bilibili.com/11375865/video,
+   菲菲资源:https://space.bilibili.com/1851256541/channel/series,
+   The itzy 资源网:https://space.bilibili.com/314509002/channel/series,
+   鬼谷良师:https://space.bilibili.com/400647031/channel/series,
+   疯狂的小黑:https://space.bilibili.com/481361060/channel/series,
    狂神说Java:https://www.bilibili.com/video/BV12J41137hu/?spm_id_from=333.999.0.0&vd_source=c81c885fcba071b7311cef27d5b0868e
  Roadmap
   CSDiy:https://csdiy.wiki/
